@@ -1,3 +1,4 @@
+/* Media queries */
 
 @media screen and (min-width: 1141px)  {
     .container { 
@@ -12,6 +13,77 @@
         margin-right: 15px;
     }
 }
+
+@media screen and (max-width: 920px) {
+    .blurb h3 {
+        font-size: 20px !important;
+    }
+    .blurb p {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .blurb {
+        width: 46.66% !important;
+    }
+    #menu-icon {
+        display: inline-block !important;
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        margin-right: 15px;
+        top: 210px;
+        right: 15px;
+    }
+    nav {
+        display: none;
+    }
+    #main-heading-CTA h1 {
+        font-size: 32px !important;
+    }
+    #main-menu {
+        width: 100%;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+    }
+    #main-menu ul li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 522px) {
+    #main-heading-CTA h1 {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    #main-heading-CTA h1 {
+        font-size: 25px !important;
+    }
+    img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .footer-links {
+        max-width: 250px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .blurb {
+        width: 96% !important;
+    }
+    .big-button {
+        padding: 10px 60px 10px 60px !important;
+    }
+   
+}
+
+
+/* Main CSS */
 
 .container {
   max-width: 1140px;  

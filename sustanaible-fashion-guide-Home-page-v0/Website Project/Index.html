@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
         <div class="container">
             <header>
                 <img src="Images/LOGO.png" alt="Logo" width="50" height="50">
-                <nav>
+                <nav id="main-menu">
                     <ul>
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Facts</a></li>
@@ -21,6 +22,10 @@
                         <li><a href="#section-3">Contact</a></li>
                     </ul>
                 </nav>
+
+                <a href="#" id="menu-icon" onclick="toggleMenu();" style="display: none;">
+                    <i class="fa fa-bars"></i>   
+                </a>
             </header>
             
             <div id="main-heading-CTA">
@@ -30,7 +35,7 @@
         </div>
     </section>
 
-   <section id="section-2">
+    <section id="section-2">
         <div class="container">
             <div class="title-box">
                 <h2>You are what you wear.</h2>
@@ -105,6 +110,19 @@
            </div>
         </div>
     </footer>
+
+<script>
+
+function toggleMenu() {
+    var x = document.getElementById("main-menu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+</script>
 
 </body>
 </html>

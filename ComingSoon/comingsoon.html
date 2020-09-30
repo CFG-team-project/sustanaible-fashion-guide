@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMING SOON</title>
+        <link rel="stylesheet" href="comingsoonstyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section id="section-1">
+          <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr>
+            <p id="demo"></p>
+            <div id="button">
+                <a href="..//Index.html" class="big-button">Go back</a>
+            </div>
+          </div>
+          
+        
+        
+        <script>
+        
+        var countDownDate = new Date("Oct 13, 2020 12:00:00").getTime();
+        
+        var countdownfunction = setInterval(function() {
+        
+          var now = new Date().getTime();
+          
+          var distance = countDownDate - now;
+          
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+          
+          if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
+        </section>
+
+       
+        
+    </body>
+</html>
+
